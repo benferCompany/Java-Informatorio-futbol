@@ -90,12 +90,12 @@ public class JugadorServicio extends Jugador {
     }
 
     public List<Jugador> crearListaJugador(Scanner scanner) {
-        int contador = 3;
+        int contador = 5;
 
         List<Jugador> jugadoresLista = new ArrayList<Jugador>();
         for (int i = 0; i < contador; i++) {
             JugadorServicio jugadorServicio = new JugadorServicio();
-            jugadorServicio.crearJugador(scanner, i);
+            jugadorServicio.crearJugador(scanner, i+1);
             jugadoresLista.add(jugadorServicio);
 
         }
